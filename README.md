@@ -47,9 +47,9 @@ Wormhole is a fast, portable Omni Layer implementation that is based off the Bit
 	go build
 	
 	#start
-	./run start whcexplorer
+	tools/run start whcexplorer
 	#stop 
-	./run stop whcexplorer
+	tools/run stop whcexplorer
 	
 ## Document
-- [API Document](https://github.com/copernet/whcexplorer/blob/master/doc/api.md)
+- [API Document](https://github.com/copernet/whcexplorer/blob/master/doc/getting-start.md)

@@ -38,8 +38,8 @@ Return the list of transactions burning BCH.
 
 **Argument**
 
-1.pageNo `string` required:the number of page(can be null)
-2.pageSize `string` required:the size of page(can be null)
+- pageNo `string` required:the number of page(can be null)
+- pageSize `string` required:the size of page(can be null)
 
 ##### Result
 
@@ -118,9 +118,9 @@ Return the list of wormhole properties and page info.
 
 **Argument**
 
-1.pageNo `string` required: the number of page(can be null)
-2.pageSize `string` required: the size of page(can be null)
-3.propertyType `string` required:the type of property(can be null, default:-1, 50:fixed property, 51:Crowdsale, 54:managed property, -1:all)
+- pageNo `string` required: the number of page(can be null)
+- pageSize `string` required: the size of page(can be null)
+- propertyType `string` required:the type of property(can be null, default:-1, 50:fixed property, 51:Crowdsale, 54:managed property, -1:all)
 
 ##### Result
 
@@ -242,8 +242,8 @@ Return history info list of with propertyId.
 
 **Argument**
 
-1.pageNo `string` required: the number of page(can be null)
-2.pageSize `string` required: the size of page(can be null)
+- pageNo `string` required: the number of page(can be null)
+- pageSize `string` required: the size of page(can be null)
 
 ##### Result
 
@@ -282,9 +282,9 @@ Return page info and transactions info list of with propertyId.
 
 **Argument**
 
-1.pageNo `string` required: the number of page(can be null)
-2.pageSize `string` required: the size of page(can be null)
-3.eventType `string` required: the type of transaction event(can be null, default:-1,SimpleSend（0）、SendAll（4）、
+- pageNo `string` required: the number of page(can be null)
+- pageSize `string` required: the size of page(can be null)
+- eventType `string` required: the type of transaction event(can be null, default:-1,SimpleSend（0）、SendAll（4）、
 AdditionalIssuance（55）、Participate in crowdfunding（1）、airdrop（3）)
 
 ##### Result
@@ -378,7 +378,7 @@ Return a list of property, fuzzy search according to the ID or name of the prope
 
 **Argument**
 
-keyword `string` required: Property ID or fuzzy name
+- keyword `string` required: Property ID or fuzzy name
 
 ##### Result
 
@@ -446,11 +446,11 @@ Return transactions information about address
 
 **Argument**
 
-1.pageNo `string` required: the number of page(can be null)
-2.pageSize `string` required: the size of page(can be null)
-3.txType `string` required: transaction type(default:-1)
-4.beginTime `string` required: begin time(default:-1)
-5.endTime `string` required: end time(default:-1)
+- pageNo `string` required: the number of page(can be null)
+- pageSize `string` required: the size of page(can be null)
+- txType `string` required: transaction type(default:-1)
+- beginTime `string` required: begin time(default:-1)
+- endTime `string` required: end time(default:-1)
 
 ##### Result
 
@@ -524,9 +524,9 @@ Return the properties details of address
 
 **Argument**
 
-1.pageNo `string` required: the number of page(can be null)
-2.pageSize `string` required: the size of page(can be null)
-3.propertyType `string` required: property type(default:-1)
+- pageNo `string` required: the number of page(can be null)
+- pageSize `string` required: the size of page(can be null)
+- propertyType `string` required: property type(default:-1)
 
 ##### Result
 
@@ -566,8 +566,8 @@ Returns the transactions for the propertyId under this address
 
 **Argument**
 
-1.pageNo `string` required: the number of page(can be null)
-2.pageSize `string` required: the size of page(can be null)
+- pageNo `string` required: the number of page(can be null)
+- pageSize `string` required: the size of page(can be null)
 
 ##### Result
 
@@ -625,9 +625,9 @@ Pagination returns transaction information for the height block
 
 **Argument**
 
-1.block_height `string` required: block height
-2.pageSize `string` required: the size of page(can be null)
-3.pageNo `string` required: the number of page(can be null)
+- block_height `string` required: block height
+- pageSize `string` required: the size of page(can be null)
+- pageNo `string` required: the number of page(can be null)
 
 ##### Result
 
@@ -685,7 +685,7 @@ Return the trend of the number of wormhole transactions in the last seven days
 
 **Argument**
 
-timeOffset `string` required: Time offset in minutes(default: 0)
+- timeOffset `string` required: Time offset in minutes(default: 0)
 
 ##### Result
 
@@ -774,10 +774,10 @@ Returns the list of blocks in a period of time, from, to set the time period, pa
 
 **Argument**
 
-1.from `string` required: start time
-2.to `string` required: end time
-3.pageSize `string` required: the size of page
-4.pageNo `string` required: the number of page
+- from `string` required: start time
+- to `string` required: end time
+- pageSize `string` required: the size of page
+- pageNo `string` required: the number of page
 
 ##### Result
 
