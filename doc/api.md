@@ -1,4 +1,4 @@
-#####`/explorer/burn/summary`
+##### `/explorer/burn/summary`
 
 Return the count of burn BCH. Total and Avail of the burn BCH will be returned.
 
@@ -368,7 +368,7 @@ curl -i -H 'Content-Type: application/json' -X GET http://127.0.0.1:8080/explore
 
 ------
 
-#####/properties/query
+##### /properties/query
 
 Return a list of property, fuzzy search according to the ID or name of the property
 
@@ -694,11 +694,11 @@ Return the trend of the number of wormhole transactions in the last seven days
 ##### Example
 
 ```json
-#Request
+//Request
 curl -i -H 'Content-Type: application/json' -X GET https://127.0.0.1:8080/explorer/tx/latest?timeOffset=-480
 
 
-# Result
+//Result
 {"result":{"11-27":15,"11-28":16,"11-29":31,"11-30":25,"12-01":44,"12-02":1,"12-03":5}}
 ```
 
@@ -753,12 +753,12 @@ None
 ##### Example
 
 ```json
-#Request
+//Request
 curl -i -H 'Content-Type: application/json' -X GET https://127.0.0.1:8080/explorer/block/block/1249142
 
 curl -i -H 'Content-Type: application/json' -X GET https://127.0.0.1:8080/explorer/block/block/0000000094913296f661df435f2850490963fb3f638d51c32a40ef719a7ae5af
 
-#Result
+//Result
 {"result":{"version":536870912,"block_height":1249142,"block_hash":"0000000094913296f661df435f2850490963fb3f638d51c32a40ef719a7ae5af","nonce":3057240586,"bits":486604799,"prev_block":"00000000005a15e4b49a073a3836a64bbdc9e0175f67228b5e744538a3352733","merkleroot":"450a32bb70adc79863cd711bfff5ea109b7ca3aac70c8c5cdd521dd59ab7b7cb","block_time":1532842563,"txcount":27,"whccount":3,"size":46031,"nonce_str":"0xb639ca0a","bits_str":"0x1d00ffff","difficulty":1,"confirmations":22283,"fee_rates":{"min_fee_rate":"0.00065758","avg_fee_rate":"0.0007028","max_fee_rate":"0.00073197"}}}
 ```
 
@@ -794,10 +794,10 @@ Returns the list of blocks in a period of time, from, to set the time period, pa
 ##### Example
 
 ```json
-#Request
+//Request
 curl -i -H 'Content-Type: application/json' -X GET https://127.0.0.1:8080/explorer/block/list?from=1540278395&to=1540279295&pageSize=10&pageNo=1
 
-#Result
+//Result
 {"result":{"pageNo":1,"pageSize":10,"total":2,"list":[{"version":536870912,"block_height":1264052,"block_hash":"0000000000000253f43eef2c668930febcdbc5d73fd50879bcd15e169314e0c2","nonce":3818756700,"bits":436483450,"prev_block":"00000000000001306b93070672ca9a31e6401f808594e9f77515a08cc599b4e8","merkleroot":"8c5c9adcafd530479d92dd5cddf0ff0ea92494f2571be2770faf476585da6946","block_time":1540279295,"txcount":6,"whccount":0,"size":1646,"nonce_str":"0xe39d9a5c","bits_str":"0x1a04357a","difficulty":3986074.41635186,"confirmations":7374,"fee_rates":null},{"version":536870912,"block_height":1264051,"block_hash":"00000000000001306b93070672ca9a31e6401f808594e9f77515a08cc599b4e8","nonce":3074014702,"bits":436488044,"prev_block":"00000000000003e826b395acbb495a1941ae7e2eae99fd2651fcf4d27c912448","merkleroot":"6903642a4c8a86338c6772382c1c369c65ee842b6ff881051ca888e5a5d4ac48","block_time":1540279230,"txcount":72,"whccount":0,"size":43137,"nonce_str":"0xb739bdee","bits_str":"0x1a04476c","difficulty":3920774.14010013,"confirmations":7375,"fee_rates":null}]}}
 
 ```
