@@ -382,7 +382,7 @@ Return a list of property, fuzzy search according to the ID or name of the prope
 
 ##### Result
 
-[properties](/properties)  response info.
+[properties](#properties)  response info.
 
 ##### Example
 
@@ -436,7 +436,7 @@ curl -i -H 'Content-Type: application/json' -X GET https://127.0.0.1:8080/explor
 
 ------
 
-##### /address/:address/txs
+##### `/address/:address/txs`
 
 Return transactions information about address
 
