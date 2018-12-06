@@ -571,7 +571,7 @@ Returns the transactions for the propertyId under this address
 
 ##### Result
 
-[transactions](#/address/:address/txs)  response info.
+[transactions](#addressaddresstxs)  response info.
 
 ##### Example
 
@@ -599,9 +599,9 @@ None
 
 ##### Result
 
-[block](#/block/:block)  response info.
+[block](#blockblock)  response info.
 
-[transactions](#/address/:address/txs)  response info.
+[transactions](#addressaddresstxs)  response info.
 
 ##### Example
 
@@ -631,7 +631,7 @@ Pagination returns transaction information for the height block
 
 ##### Result
 
-[transactions](#/address/:address/txs)  response info.
+[transactions](#addressaddresstxs)  response info.
 
 ##### Example
 
@@ -661,7 +661,7 @@ None
 
 `raw_data` the raw hexadecimal string for the transaction
 
-[transactions](#/address/:address/txs)  response info.
+[transactions](#addressaddresstxs)  response info.
 
 ##### Example
 
@@ -789,7 +789,7 @@ Returns the list of blocks in a period of time, from, to set the time period, pa
 
 `list` List of block
 
-[block](#/block/:block)  response info.
+[block](#blockblock)  response info.
 
 ##### Example
 
